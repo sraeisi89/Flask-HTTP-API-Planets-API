@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>PLANETS</title>
+{% endblock %}
+
+
+
+{% block body %}
+    <h2>Server  Requests</h2>
+    <table>
+        <tr>
+            <td>PLANET REQUESTED</td>
+        {% for element in planets_request %}
+          <td>{{ element }} </td>
+        {% endfor %}
+        </tr>
+        <tr>
+            <td>NUMBER OF REQUESTS</td>
+        {% for num in number_of_requests %}
+          <td>{{ num }} </td>
+        {% endfor %}
+        </tr>
+</table>
+{% endblock %}
+
+
